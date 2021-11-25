@@ -12,59 +12,73 @@
         <h2>This is the GAME (GSA Article Markdown Editor), let's start with learning some things :)</h2>
         <br>
         <h3>Markdown</h3><hr>
-        <p>Markdown is, in short, a plaintext editing language. It bridges the gap between user-friendliness and the developer's ease of use. It is very easily converted into HTML, the foundation of the web.</p>
+        <p><span class="lead">Markdown is, in short, a plaintext editing language.</span> It bridges the gap between user-friendliness and the developer's ease of use. It is very easily converted into HTML, the foundation of the web.</p>
         <h4>Syntax</h4><hr>
         <p>Syntax, or how special characters are placed, is very important to Markdown, one missing <code>space</code> or an additional <code>space</code> could mean the difference between a perfectly functioning site and one that looks like it hasn't been updated since 2010. Let's go over some syntax below. Special groups of special characters are grouped into drop dow menus</p>
-        <h5>Headings</h5>
-        <details>
-            <summary><code>&#35;, &#35;&#35;, &#35;&#35;&#35;, &#35;&#35;&#35;&#35;...</code></summary>
-            <p>Headings are the most important things I can tell you right now. While mostly normal Markdown, the GAME has one <b><i>very</i></b> important differnce. Before getting into that, let me show you the original headings. They are declared by putting a number of hashes, 1-6, <b>and a space</b> in front of a Line of text.</p>
-            <table class="table table-bordered table-striped" border="1">
-                <tr>
-                    <th>Markdown</th>
-                    <th>Example</th>
-                    <th>Result</th>
-                </tr>
-                <tr>
-                    <td><code>&#35;&#160;</code></td>
-                    <td><code>&#35; The quick brown fox jumped over the lazy dogs</code></td>
-                    <td><h1>The quick brown fox jumped over the lazy dogs</h1></td>
-                </tr>
-                <tr>
-                    <td><code>&#35;&#35;&#160;</code></td>
-                    <td><code>&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
-                    <td><h2>The quick brown fox jumped over the lazy dogs</h2></td>
-                </tr>
-                <tr>
-                    <td><code>&#35;&#35;&#35;&#160;</code></td>
-                    <td><code>&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
-                    <td><h3>The quick brown fox jumped over the lazy dogs</h3></td>
-                </tr>
-                <tr>
-                    <td><code>&#35;&#35;&#35;&#35;&#160;</code></td>
-                    <td><code>&#35;&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
-                    <td><h4>The quick brown fox jumped over the lazy dogs</h4></td>
-                </tr>
-                <tr>
-                    <td><code>&#35;&#35;&#35;&#35;&#35;&#160;</code></td>
-                    <td><code>&#35;&#35;&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
-                    <td><h5>The quick brown fox jumped over the lazy dogs</h5></td>
-                </tr>
-                <tr>
-                    <td><code>&#35;&#35;&#35;&#35;&#35;&#35;&#160;</code></td>
-                    <td><code>&#35;&#35;&#35;&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
-                    <td><h6>The quick brown fox jumped over the lazy dogs</h6></td>
-                </tr>
-            </table>
-            <br>
-            <p><span class="lead">Now that you can see that, its time for me to mess it all up.</span> Completely disregard <code># </code>. The website prohibits the use of top-level headings, but instead of completely getting rid of them, they are just simplpy repurposed. Instead, they are used to convey metadata (data <i>about</i> the data). This includes the Author, Description, Title, and eventually Keywords (not yet implemented), see below</p>
-            <pre class="border border-dark rounded-3 bg-secondary bg-opacity-10 w-auto">
-                # TITLE: This is The title of the Article
-                # DESCRIPTION: This is a description of the article, no longer limited by character count.
-                # AUTHOR: Tesseract
-                # END-METADATA
-            </pre>
+        
+        <div class="accordian accordian-flush">
+            <div class="accordian-item">
+                <h2 class="accordian-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Headings
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordian-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordian-body">
+                        <p>Headings are the most important things I can tell you right now. While mostly normal Markdown, the GAME has one <b><i>very</i></b> important differnce. Before getting into that, let me show you the original headings. They are declared by putting a number of hashes, 1-6, <b>and a space</b> in front of a Line of text.</p>
+                        <table class="table table-bordered table-striped" border="1">
+                            <tr>
+                                <th>Markdown</th>
+                                <th>Example</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td><code>&#35;&#160;</code></td>
+                                <td><code>&#35; The quick brown fox jumped over the lazy dogs</code></td>
+                                <td><h1>The quick brown fox jumped over the lazy dogs</h1></td>
+                            </tr>
+                            <tr>
+                                <td><code>&#35;&#35;&#160;</code></td>
+                                <td><code>&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
+                                <td><h2>The quick brown fox jumped over the lazy dogs</h2></td>
+                            </tr>
+                            <tr>
+                                <td><code>&#35;&#35;&#35;&#160;</code></td>
+                                <td><code>&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
+                                <td><h3>The quick brown fox jumped over the lazy dogs</h3></td>
+                            </tr>
+                            <tr>
+                                <td><code>&#35;&#35;&#35;&#35;&#160;</code></td>
+                                <td><code>&#35;&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
+                                <td><h4>The quick brown fox jumped over the lazy dogs</h4></td>
+                            </tr>
+                            <tr>
+                                <td><code>&#35;&#35;&#35;&#35;&#35;&#160;</code></td>
+                                <td><code>&#35;&#35;&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
+                                <td><h5>The quick brown fox jumped over the lazy dogs</h5></td>
+                            </tr>
+                            <tr>
+                                <td><code>&#35;&#35;&#35;&#35;&#35;&#35;&#160;</code></td>
+                                <td><code>&#35;&#35;&#35;&#35;&#35;&#35; The quick brown fox jumped over the lazy dogs</code></td>
+                                <td><h6>The quick brown fox jumped over the lazy dogs</h6></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p><span class="lead">Now that you can see that, its time for me to mess it all up.</span> Completely disregard <code># </code>. The website prohibits the use of top-level headings, but instead of completely getting rid of them, they are just simplpy repurposed. Instead, they are used to convey metadata (data <i>about</i> the data). This includes the Author, Description, Title, and eventually Keywords (not yet implemented), see below</p>
+                        <pre class="border border-dark rounded-3 bg-secondary bg-opacity-10 w-auto">
+                            # TITLE: This is The title of the Article
+                            # DESCRIPTION: This is a description of the article, no longer limited by character count.
+                            # AUTHOR: Tesseract
+                            # END-METADATA
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
 
-        </details>
+        
     </body>
 </html>

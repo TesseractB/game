@@ -16,16 +16,16 @@
         <h4>Syntax</h4><hr>
         <p>Syntax, or how special characters are placed, is very important to Markdown, one missing <code>space</code> or an additional <code>space</code> could mean the difference between a perfectly functioning site and one that looks like it hasn't been updated since 2010. Let's go over some syntax below. Special groups of special characters are grouped into drop dow menus</p>
         
-        <div class="accordion accordion-flush">
+        <div class="accordion accordion-flush" id="syntaxFlush">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Headings
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#syntaxFlush">
                     <div class="accordion-body">
-                        <p>Headings are the most important things I can tell you right now. While mostly normal Markdown, the GAME has one <b><i>very</i></b> important differnce. Before getting into that, let me show you the original headings. They are declared by putting a number of hashes, 1-6, <b>and a space</b> in front of a Line of text.</p>
+                        <p><span class="lead">Headings are the most important things I can tell you right now.</span> While mostly normal Markdown, the GAME has one <b><i>very</i></b> important differnce. Before getting into that, let me show you the original headings. They are declared by putting a number of hashes, 1-6, <b>and a space</b> in front of a Line of text.</p>
                         <table class="table table-bordered table-striped" border="1">
                             <tr>
                                 <th>Markdown</th>
@@ -71,6 +71,45 @@
                             # AUTHOR: Tesseract
                             # END-METADATA
                         </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Plain Text &amp; Text Formatting
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#syntaxFlush">
+                    <div class="accordion-body">
+                        <p><span class="lead">This will be the largest part of your markdown file.</span> While not as crucial as the headings, it is still important. In the table below, I am ommitting unsupported ways to achieve the same effect, as they are widely unused.</p>
+                        <table class="table table-bordered table-striped" border="1">
+                            <tr>
+                                <th>Markdown</th>
+                                <th>Example</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td><code>*bold*</code></td>
+                                <td>Here, have some *bold* text.</td>
+                                <td>Here, have some <b>bold</b> text.</td>
+                            </tr>
+                            <tr>
+                                <td><code>**italic**</code></td>
+                                <td>Here, have some *italic* text.</td>
+                                <td>Here, have some <i>italic</i> text.</td>
+                            </tr>
+                            <tr>
+                                <td><code>***bold &amp; italic***</code></td>
+                                <td>Here, have some ***bold &amp; italic*** text.</td>
+                                <td>Here, have some <b><i>bold &amp; italic</i></b> text.</td>
+                            </tr>
+                            <tr>
+                                <td><code>> </code></td>
+                                <td>> A quote, to inspire</td>
+                                <td><blockquote>A quote, to inspire</blockquote></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

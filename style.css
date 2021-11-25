@@ -29,6 +29,9 @@ code {
     border-radius: 3px;
 }
 table {
-    border: collapse;
-    
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
 }

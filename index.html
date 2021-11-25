@@ -15,7 +15,7 @@
         <h5>Headings</h5>
         <details>
             <summary><code>&#35;, &#35;&#35;, &#35;&#35;&#35;, &#35;&#35;&#35;&#35;...</code></summary>
-            <p>Headings are the most important things I can tell you right now. While mostly normal Markdown, the GAME has one<b><i>very</i></b> important differnce. Before getting into that, let me show you the original headings. They are declared by putting a number of hashes, 1-6, <b>and a space</b> in front of a Line of text.</p>
+            <p>Headings are the most important things I can tell you right now. While mostly normal Markdown, the GAME has one <b><i>very</i></b> important differnce. Before getting into that, let me show you the original headings. They are declared by putting a number of hashes, 1-6, <b>and a space</b> in front of a Line of text.</p>
             <table border="1">
                 <tr>
                     <th>Markdown</th>
@@ -53,6 +53,15 @@
                     <td><h6>The quick brown fox jumped over the lazy dogs</h6></td>
                 </tr>
             </table>
+            <br>
+            <p>Now that you can see that, its time for me to mess it all up. Completely disregard <code># </code>. The website prohibits the use of top-level headings, but instead of completely getting rid of them, they are just simplpy repurposed. Instead, they are used to convey metadata (data <i>about</i> the data). This includes the Author, Description, Title, and eventually Keywords (not yet implemented), see below</p>
+            <pre>
+                # TITLE: This is The title of the Article
+                # DESCRIPTION: This is a description of the article, no longer limited by character count.
+                # AUTHOR: Tesseract
+                # END-METADATA
+            </pre>
+
         </details>
     </body>
 </html>

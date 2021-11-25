@@ -112,7 +112,39 @@
                         </table>
                     </div>
                 </div>
+                
             </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                        Links &amp; Images
+                    </button>
+                </h2>
+                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#syntaxFlush">
+                    <div class="accordion-body">
+                        <p><span class="lead">This is where things get particularly tricky...</span> I want to preface this section with repeating that any rogue <code>space</code> character, whether it is somewhere it should be or it is not in a place that requires it, <i>can and will</i> stop your file from properly working. Please not that there <b>is not</b> a space between the <code>[]</code>> and <code>()</code> pairs.</p>
+                        <table class="table table-bordered table-striped" border="1">
+                            <tr>
+                                <th>Markdown</th>
+                                <th>Example</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td><code>[Title of Link](Destination)</code></td>
+                                <td><code>[Rick Astley's Never Gonna Give You Up](https://www.youtube.com/watch?v=dQw4w9WgXcQ)</code></td>
+                                <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Rick Astley's Never Gonna Give You Up</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>![Alt Text for Image](Path/To/Image "Optional Title")</code></td>
+                                <td><code>![A large boulder](./large-boulder.jpg "Rock")</code></td>
+                                <td><img alt="A large Boulder" title="Rock" src="https://media.cnn.com/api/v1/images/stellar/prod/190525112236-01-co-boulder.jpg?q=x_0,y_0,h_1688,w_2999,c_fill/h_150,w_267"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+
         </div>
         
         

@@ -24,6 +24,11 @@ div:focus {
 }
 
 code {
-    background: darkGray;
+    background: rgb(245,245,245);
     color: red;
+    border-radius: 3px;
+}
+table {
+    border: collapse;
+    
 }
